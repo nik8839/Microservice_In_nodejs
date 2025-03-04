@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Docker
+docker-compose.override.yml
+docker-volume-data/
