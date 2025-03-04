@@ -183,28 +183,6 @@ If a service crashes or needs to be restarted:
 docker-compose restart order-service
 ```
 
----
-
-## 📌 Common Issues
-
-### ❌ Error: "Cannot find module '../communicator/index'"
-
-- Ensure that the **path to the `communicator` module is correct**.
-- Use **relative paths** when importing in `index.js`:
-  ```js
-  const communicator = require('../communicator/index');
-  ```
-
-### ❌ Error: "No such container: order-service-1"
-
-- Run `docker ps -a` to check if the container exists.
-- If not, start the containers using:
-  ```sh
-  docker-compose up --build
-  ```
-
----
-
 ## 📌 Pushing to GitHub
 
 ### 1️⃣ Initialize Git (if not already done)
@@ -229,6 +207,5 @@ git push origin main
 
 ---
 
-## 🎯 Conclusion
 
-This project demonstrates a **Dockerized microservices architecture**, making it easy to **deploy, scale, and test** services independently.
+
